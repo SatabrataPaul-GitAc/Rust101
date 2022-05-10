@@ -10,4 +10,18 @@ fn main()
 
     y = 20;
     println!("Value of y after mutation: {}", y);
+
+    //Shadowing of variables
+    let z = 50;
+    println!("Value of z : {}", z);
+
+    let z = 60;
+    println!("New value of z: {}", z);
+
+    {
+        let z = z+1;
+        println!("Value of z inside block: {}", z);
+    }
+
+    println!("Value of z outside block: {}", z);
 }
