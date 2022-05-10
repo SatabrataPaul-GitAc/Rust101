@@ -24,4 +24,14 @@ fn main()
     }
 
     println!("Value of z outside block: {}", z);
+
+    //Difference between shadowing and mut
+
+    let mut name = "Paul"; //type -> string
+    //name = name.len() would throw a compile time error: because a variable's type can't be mutated using mut
+
+    let spaces = "    "; //type -> string
+    let spaces = spaces.len(); //type -> integer
+
+    //Here the variable's type can also be changed using shadowing
 }
